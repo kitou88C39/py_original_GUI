@@ -13,7 +13,10 @@ button_1 = tkinter.Button(root, text='ボタン1')
 button_1.grid(row=0, column=0)
 
 button_2 = tkinter.Button(root, text='ボタン2')
-button_2.grid(row=0, column=1)
+button_2.grid(row=1, column=1)
+
+button_3 = tkinter.Button(root, text='ボタン3', bg='pink', activebackground='yellow')
+button_3.grid(row=1, column=1, padx=10, pady=10, ipadx=10, ipady=10)
 
 
 # ウィンドウのループ処理

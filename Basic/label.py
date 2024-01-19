@@ -15,5 +15,8 @@ label_1.pack()
 label_2 = tkinter.Label(root, text='宜しくお願いします', font=('Arial',10,'bold'))
 label_2.pack()
 
+label_3 = tkinter.Label(root, text='宜しくお願いします', font=('Arial',10,'bold'), bg='gray')
+label_3.pack(padx=10, pady=10)
+
 # ウィンドウのループ処理
 root.mainloop()

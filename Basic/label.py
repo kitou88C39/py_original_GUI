@@ -10,8 +10,10 @@ root.config(bg='red') #背景色
 
 # ラベルの作成
 label_1 = tkinter.Label(root, text='宜しくお願いします')
+label_1.pack()
 
-
+label_2 = tkinter.Label(root, text='宜しくお願いします', font=('Arial',10,'bold'))
+label_2.pack()
 
 # ウィンドウのループ処理
 root.mainloop()

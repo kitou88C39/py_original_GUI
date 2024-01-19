@@ -12,7 +12,7 @@ root.config(bg='red') #背景色
 sub_window = tkinter.Toplevel()
 sub_window.title('Second Window')
 sub_window.config(bg='#123123')
-sub_window.geometry('200×300')
+sub_window.geometry('200×300+500+500')
 
 # ウィンドウのループ処理
 root.mainloop()

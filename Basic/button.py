@@ -18,8 +18,8 @@ button_2.grid(row=0, column=1)
 button_3 = tkinter.Button(root, text='ボタン3', bg='pink', activebackground='yellow')
 button_3.grid(row=0, column=2, padx=10, pady=10, ipadx=10, ipady=10)
 
-button_4 = tkinter.Button(root, text='ボタン4')
-button_4.grid(row=1, column=0, columnspan=0)
+button_4 = tkinter.Button(root, text='ボタン4', borderwidth=5)
+button_4.grid(row=1, column=0, columnspan=0, sticky='WE')
 
 
 # ウィンドウのループ処理

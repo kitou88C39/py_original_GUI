@@ -12,6 +12,9 @@ root.config(bg='red') #背景色
 button_1 = tkinter.Button(root, text='ボタン1')
 button_1.grid(row=0, column=0)
 
+button_2 = tkinter.Button(root, text='ボタン2')
+button_2.grid(row=0, column=1)
+
 
 # ウィンドウのループ処理
 root.mainloop()

@@ -1,4 +1,5 @@
 import tkinter
+import tkinter.font as font
 
 # ウィンドウの作成
 root = tkinter.Tk()
@@ -28,6 +29,9 @@ label_5.pack(padx=10, pady=(0, 10), ipadx=10, ipady=10, anchor='w')
 
 label_6 = tkinter.Label(root, text='宜しくお願いします', font=('Arial',10,'bold'), bg='gray', fg='green')
 label_6.pack(padx=10, pady=(0, 10), fill='w', expand=True)
+
+#フォントの確認
+print(font.families())
 
 # ウィンドウのループ処理
 root.mainloop()

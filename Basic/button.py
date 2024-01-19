@@ -10,6 +10,7 @@ root.config(bg='red') #背景色
 
 # ボタンの作成
 button_1 = tkinter.Button(root, text='ボタン1')
+button_1.grid(row=0, column=0)
 
 
 # ウィンドウのループ処理

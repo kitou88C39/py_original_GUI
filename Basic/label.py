@@ -23,5 +23,8 @@ label_4.config(text='宜しくお願いします')
 label_4.config(bg='gray')
 label_4.pack(padx=10, pady=10)
 
+label_5 = tkinter.Label(root, text='宜しくお願いします', font=('Arial',10,'bold'), bg='gray', fg='green')
+label_5.pack(padx=10, pady=10)
+
 # ウィンドウのループ処理
 root.mainloop()

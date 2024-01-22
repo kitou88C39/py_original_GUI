@@ -21,6 +21,21 @@ button_3.grid(row=0, column=2, padx=10, pady=10, ipadx=10, ipady=10)
 button_4 = tkinter.Button(root, text='ボタン4', borderwidth=5)
 button_4.grid(row=1, column=0, columnspan=0, sticky='WE')
 
+button_5 = tkinter.Button(root, text='テスト')
+button_6 = tkinter.Button(root, text='テスト')
+button_7 = tkinter.Button(root, text='テスト')
+button_8 = tkinter.Button(root, text='テスト')
+button_9 = tkinter.Button(root, text='テスト')
+button_10 = tkinter.Button(root, text='テスト')
+
+button_5.grid(row=0, column=0, padx=5, pady=5)
+button_6.grid(row=0, column=0, padx=5, pady=5)
+button_7.grid(row=0, column=0, padx=5, pady=5)
+button_8.grid(row=0, column=0, padx=5, pady=5)
+button_9.grid(row=0, column=0, padx=5, pady=5)
+button_10.grid(row=0, column=0, padx=5, pady=5)
+
+
 
 # ウィンドウのループ処理
 root.mainloop()

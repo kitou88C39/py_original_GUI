@@ -23,9 +23,12 @@ frame_3.pack(fill='both', expand=True)
 
 # ウィジェットの配置
 tkinter.Label(frame_1, text='test').pack()
-tkinter.Label(frame_2, text='test').pack()
-tkinter.Label(frame_3, text='test').pack()
+tkinter.Label(frame_1, text='test').pack()
+tkinter.Label(frame_1, text='test').pack()
 
+tkinter.Label(frame_2, text='test').grid(row=0, column=0)
+tkinter.Label(frame_2, text='test').grid(row=1, column=1)
+tkinter.Label(frame_2, text='test').grid(row=2, column=2)
 
 # ウィンドウのループ処理
 root.mainloop()

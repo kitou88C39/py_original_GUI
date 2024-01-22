@@ -30,10 +30,10 @@ button_10 = tkinter.Button(root, text='テスト')
 
 button_5.grid(row=2, column=0, padx=5, pady=5)
 button_6.grid(row=2, column=1, padx=5, pady=5)
-button_7.grid(row=2, column=2, padx=5, pady=5)
+button_7.grid(row=2, column=2, padx=5, pady=5, sticky='w')
 button_8.grid(row=3, column=0, padx=5, pady=5)
 button_9.grid(row=3, column=1, padx=5, pady=5)
-button_10.grid(row=3, column=2, padx=5, pady=5)
+button_10.grid(row=3, column=2, padx=5, pady=5, sticky='w')
 
 
 

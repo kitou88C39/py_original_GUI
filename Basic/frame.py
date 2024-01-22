@@ -13,6 +13,8 @@ root.resizable(0, 0) #サイズの変更禁止
 
 # frameの作成
 frame_1 = tkinter.Frame(root, bg='yellow')
+frame_2 = tkinter.Frame(root, bg='green')
+frame_3 = tkinter.Label(root, text='ラベルフレームです', borderwidth=5)
 
 
 # ウィンドウのループ処理

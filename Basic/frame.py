@@ -16,6 +16,12 @@ frame_1 = tkinter.Frame(root, bg='yellow')
 frame_2 = tkinter.Frame(root, bg='green')
 frame_3 = tkinter.Label(root, text='ラベルフレームです', borderwidth=5)
 
+# frameをroot上に配置
+frame_1.pack()
+frame_2.pack()
+frame_3.pack()
+
+
 
 # ウィンドウのループ処理
 root.mainloop()

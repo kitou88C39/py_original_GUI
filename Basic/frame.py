@@ -21,5 +21,11 @@ frame_1.pack(fill='both', expand=True)
 frame_2.pack(fill='x', expand=True)
 frame_3.pack(fill='both', expand=True)
 
+# ウィジェットの配置
+tkinter.Label(frame_1, text='test').pack()
+tkinter.Label(frame_2, text='test').pack()
+tkinter.Label(frame_3, text='test').pack()
+
+
 # ウィンドウのループ処理
 root.mainloop()

@@ -80,6 +80,16 @@ def hantei():
             kachi = n
         if masu[2][0]==n and masu[2][1]==n and masu[2][2]==n:
             kachi = n
+        # 斜めに並んだかを判定する
+        if masu[0][0]==n and masu[1][1]==n and masu[2][2]==n:
+            kachi = n
+        if masu[0][2]==n and masu[1][1]==n and masu[2][0]==n:
+            kachi = n
+        if kachi == 1:
+            root.title(" ○ が3つ揃いました")
+        if kachi == 2:
+            root.title(" ✖️ が3つ揃いました")
+        
         
 
 

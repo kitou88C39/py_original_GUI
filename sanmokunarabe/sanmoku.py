@@ -32,14 +32,16 @@ def click(e):
     my=int(e.y/200)
     if mx>2:mx=2
     if my>2:my=2
-       masu[my][mx]==0:
-       masu[my][mx]==1
+    if masu[my][mx]==0:
+       masu[my][mx]=1
     else:
-        masu[my][mx]==0
+       masu[my][mx]=0
+    masume()
 
 root=tkinter.Tk()
 root.title("三目並べ")
 root.resizable(False, False) #サイズの変更禁止
+root.bind("<Button>",click)
 cvs=tkinter.Canvas(width=600,height=600,bg="white")
 cvs.pack()
 masume()

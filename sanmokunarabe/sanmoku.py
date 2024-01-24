@@ -1,4 +1,6 @@
 import tkinter
+import random
+import time
 # masu[0][0]の値が1、masuが[1][2]の値が２
 masu=[
     [0,0,0],
@@ -6,6 +8,7 @@ masu=[
     [0,0,0]
 ]
 
+shirushi=0
 def masume():
 #    cvs.create_line(200,0,200,600,fill="gray", width=8) # 左の縦線
 #    cvs.create_line(400,0,400,600,fill="gray", width=8) # 右の縦線
@@ -27,6 +30,8 @@ def masume():
             if masu[y][x]==2:
                 cvs.create_line(X+20,Y+20,X+180,Y+180,fill="red",width=12)
                 cvs.create_line(X+180,Y+20,X+20,Y+180,fill="red",width=12)
+    cvs.update()
+
 def click(e):
     mx=int(e.x/200)
     my=int(e.y/200)

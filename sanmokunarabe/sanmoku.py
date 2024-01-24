@@ -9,6 +9,7 @@ def masume():
 # forでマスを作成する
     for i in range(1,3):
         cvs.create_line(200*i,0,200*i,600,fill="gray",width=8)
+        cvs.create_line(0,i*200,600,i*200,fill="gray",width=8)
 
 root=tkinter.Tk()
 root.title("三目並べ")

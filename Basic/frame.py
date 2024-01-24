@@ -18,7 +18,7 @@ frame_3 = tkinter.Label(root, text='ラベルフレームです', borderwidth=5)
 
 # frameをroot上に配置
 frame_1.pack(fill='both', expand=True)
-frame_2.pack(fill='x', expand=True)
+frame_2.pack(fill='both', expand=True)
 frame_3.pack(fill='both', expand=True)
 
 # ウィジェットの配置

@@ -66,6 +66,14 @@ def hantei():
     global kachi
     kachi = 0
     for n in range(1,3):
+        # 縦に並んだかを判定する
+        if masu[0][0]==n and masu[1][0]==n and masu[2][0]==n:
+            kachi = n
+        if masu[0][1]==n and masu[1][1]==n and masu[2][1]==n:
+            kachi = n
+        if masu[0][2]==n and masu[1][2]==n and masu[2][2]==n:
+            kachi = n
+
 
 root=tkinter.Tk()
 root.title("三目並べ")

@@ -1,10 +1,10 @@
 import tkinter
 import random
 import time
-# masu[0][0]の値が1、masuが[1][2]の値が２
+
 masu=[
     [0,0,0],
-    [0,0,2],
+    [0,0,0],
     [0,0,0]
 ]
 
@@ -45,7 +45,12 @@ def click(e):
        time.sleep(0.5)
        if shirushi<9:
         computer()
-    
+def computer():
+    global shirushi
+    while True:
+
+
+
 
 root=tkinter.Tk()
 root.title("三目並べ")

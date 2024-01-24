@@ -53,6 +53,9 @@ def computer():
         if masu[y][x]==0:
             masu[my][mx]=1
             shirushi=shirushi+1
+            masume()
+            time.sleep(0.5)
+            break
 
 root=tkinter.Tk()
 root.title("三目並べ")

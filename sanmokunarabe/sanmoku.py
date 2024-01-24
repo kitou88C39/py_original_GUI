@@ -23,6 +23,9 @@ def masume():
             if masu[y][x]==1:
                 cvs.create_oval(X+20,Y+20,X+180,Y+180,outline="blue",
                 width=12)
+            if masu[y][x]==2:
+                cvs.create_line(X+20,Y+20,X+180,Y+180,fill="red",width=12)
+                cvs.create_line(X+180,Y+20,X+20,Y+180,fill="red",width=12)
 
 root=tkinter.Tk()
 root.title("三目並べ")

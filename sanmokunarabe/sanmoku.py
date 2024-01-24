@@ -7,8 +7,8 @@ masu=[
     [0,0,0],
     [0,0,0]
 ]
-
 shirushi=0
+kachi=0
 def masume():
 #    cvs.create_line(200,0,200,600,fill="gray", width=8) # 左の縦線
 #    cvs.create_line(400,0,400,600,fill="gray", width=8) # 右の縦線
@@ -34,6 +34,8 @@ def masume():
 
 def click(e):
     global shirushi
+    if shirushi==1 or shirushi==3 or shirushi==5 or shirushi==7:
+
     mx=int(e.x/200)
     my=int(e.y/200)
     if mx>2:mx=2

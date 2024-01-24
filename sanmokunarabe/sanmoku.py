@@ -33,12 +33,16 @@ def masume():
     cvs.update()
 
 def click(e):
+    global shirushi
     mx=int(e.x/200)
     my=int(e.y/200)
     if mx>2:mx=2
     if my>2:my=2
     if masu[my][mx]==0:
        masu[my][mx]=1
+       shirushi=shirushi+1
+       masume()
+       time.sleep(0.5)
     else:
        masu[my][mx]=0
     masume()

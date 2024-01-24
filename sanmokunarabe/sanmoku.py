@@ -35,6 +35,7 @@ def masume():
 def click(e):
     global shirushi
     if shirushi==1 or shirushi==3 or shirushi==5 or shirushi==7:
+        return
 
     mx=int(e.x/200)
     my=int(e.y/200)
@@ -45,6 +46,7 @@ def click(e):
        shirushi=shirushi+1
        masume()
        time.sleep(0.5)
+       hantei()
        if shirushi<9:
         computer()
 def computer():
@@ -57,7 +59,13 @@ def computer():
             shirushi=shirushi+1
             masume()
             time.sleep(0.5)
+            hantei()
             break
+
+def hantei():
+    global kachi
+    kachi = 0
+    for n in range(1,3):
 
 root=tkinter.Tk()
 root.title("三目並べ")

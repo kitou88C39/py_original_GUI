@@ -8,3 +8,5 @@ def masume():
 
 root=tkinter.Tk()
 root.title("三目並べ")
+root.resizable(False, False) #サイズの変更禁止
+cvs=tkinter.Canvas(width=600,height=600,bg="white")

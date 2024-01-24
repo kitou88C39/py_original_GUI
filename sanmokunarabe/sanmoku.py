@@ -12,6 +12,7 @@ def masume():
 #    cvs.create_line(0,200,600,200,fill="gray", width=8) # 上の横線
 #    cvs.create_line(0,400,600,400,fill="gray", width=8) # 下の横線
 
+    cvs.delete("all")
 # for文でマスを作成する
     for i in range(1,3):
         cvs.create_line(200*i,0,200*i,600,fill="gray",width=8)
@@ -26,7 +27,10 @@ def masume():
             if masu[y][x]==2:
                 cvs.create_line(X+20,Y+20,X+180,Y+180,fill="red",width=12)
                 cvs.create_line(X+180,Y+20,X+20,Y+180,fill="red",width=12)
-
+def click(e):
+    mx=int(e.x/200)
+    my=int(e.y/200)
+    
 root=tkinter.Tk()
 root.title("三目並べ")
 root.resizable(False, False) #サイズの変更禁止

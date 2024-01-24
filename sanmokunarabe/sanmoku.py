@@ -48,9 +48,11 @@ def click(e):
 def computer():
     global shirushi
     while True:
-
-
-
+        x=random.randint(0,2)
+        y=random.randint(0,2)
+        if masu[y][x]==0:
+            masu[my][mx]=1
+            shirushi=shirushi+1
 
 root=tkinter.Tk()
 root.title("三目並べ")

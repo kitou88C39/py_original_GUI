@@ -43,9 +43,9 @@ def click(e):
        shirushi=shirushi+1
        masume()
        time.sleep(0.5)
-    else:
-       masu[my][mx]=0
-    masume()
+       if shirushi<9:
+        computer()
+    
 
 root=tkinter.Tk()
 root.title("三目並べ")

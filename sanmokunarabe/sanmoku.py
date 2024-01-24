@@ -1,10 +1,10 @@
 import tkinter
+# masu[0][0]の値が1、masuが[1][2]の値が２
 masu=[
     [0,0,0],
-    [0,0,0],
+    [0,0,2],
     [0,0,0]
 ]
-
 
 def masume():
 #    cvs.create_line(200,0,200,600,fill="gray", width=8) # 左の縦線

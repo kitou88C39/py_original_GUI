@@ -60,9 +60,13 @@ def click(e):
         time.sleep(0.5)
         hantei()
         syouhai()
-        
+
 def computer():
     global shirushi
+    # 3つ揃うマスがあるか
+    for y in range(3):
+
+
     while True:
         x=random.randint(0,2)
         y=random.randint(0,2)

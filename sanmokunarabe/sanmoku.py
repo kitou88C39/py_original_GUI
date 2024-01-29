@@ -69,7 +69,10 @@ def computer():
             if masu[y][x]==0:
                 masu[y][x]=2
                 hantei()
-
+                if kachi==2:
+                    shirushi=shirushi+1
+                    return
+                masu[y][x]=0
 
 
     while True:

@@ -79,7 +79,11 @@ for y in range(3):
         if masu[y][x]==0:
                 masu[y][x]=1
                 hantei()
-
+                if kachi==1:
+                    masu[y][x]=2
+                    shirushi= shirushi+1
+                    return
+                masu[y][x]=0
 
 
     while True:

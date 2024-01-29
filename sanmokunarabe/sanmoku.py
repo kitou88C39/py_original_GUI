@@ -50,6 +50,7 @@ def click(e):
        masume()
        time.sleep(0.5)
        hantei()
+       syouhai()
        if shirushi<9:
         computer()
 def computer():
@@ -63,6 +64,7 @@ def computer():
             masume()
             time.sleep(0.5)
             hantei()
+            syouhai()
             break
 
 def hantei():
@@ -103,6 +105,13 @@ def syouhai():
         shirushi=9
     if kachi==0 and shirushi==9:
         cvs.create_text(300,300,text="引き分け",font=FNT,fill="lime")
+def replay():
+    global shirushi
+    shirushi=0
+    for y in range(3):
+        for x in range(3):
+            masu[y][x]=0
+        masume()
 
 
 root=tkinter.Tk()

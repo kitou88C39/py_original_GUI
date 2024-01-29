@@ -9,6 +9,7 @@ masu=[
 ]
 shirushi=0
 kachi=0
+FNT=("Times New Roman",60)
 def masume():
 #    cvs.create_line(200,0,200,600,fill="gray", width=8) # 左の縦線
 #    cvs.create_line(400,0,400,600,fill="gray", width=8) # 右の縦線
@@ -30,6 +31,8 @@ def masume():
             if masu[y][x]==2:
                 cvs.create_line(X+20,Y+20,X+180,Y+180,fill="red",width=12)
                 cvs.create_line(X+180,Y+20,X+20,Y+180,fill="red",width=12)
+    if shirushi==0:
+        cvs.create_text(300,300,text="スタート",fii="navy",font=FNT)
     cvs.update()
 
 def click(e):
@@ -85,13 +88,10 @@ def hantei():
             kachi = n
         if masu[0][2]==n and masu[1][1]==n and masu[2][0]==n:
             kachi = n
-        if kachi == 1:
-            root.title(" ○ が3つ揃いました")
-        if kachi == 2:
-            root.title(" ✖️ が3つ揃いました")
-        
-        
-
+    if kachi == 1:
+        root.title(" ○ が3つ揃いました")
+    if kachi == 2:
+        root.title(" ✖️ が3つ揃いました")
 
 root=tkinter.Tk()
 root.title("三目並べ")

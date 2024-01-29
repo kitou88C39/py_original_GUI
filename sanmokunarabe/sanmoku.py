@@ -98,6 +98,10 @@ def syouhai():
     if kachi==1:
         cvs.create_text(300,300,text="あなたの勝ち",font=FNT,fill="cyan")
         shirushi=9
+    if kachi==2:
+        cvs.create_text(300,300,text="CPの勝ち",font=FNT,fill="gold")
+        shirushi=9
+
 
 root=tkinter.Tk()
 root.title("三目並べ")

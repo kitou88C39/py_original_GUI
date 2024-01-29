@@ -37,6 +37,9 @@ def masume():
 
 def click(e):
     global shirushi
+    if shirushi==9:
+        replay()
+        return
     if shirushi==1 or shirushi==3 or shirushi==5 or shirushi==7:
         return
 

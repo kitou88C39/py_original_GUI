@@ -65,6 +65,11 @@ def computer():
     global shirushi
     # 3つ揃うマスがあるか
     for y in range(3):
+        for x in range(3):
+            if masu[y][x]==0:
+                masu[y][x]=2
+                hantei()
+
 
 
     while True:

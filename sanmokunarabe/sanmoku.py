@@ -85,17 +85,16 @@ for y in range(3):
                     return
                 masu[y][x]=0
 
-
     while True:
         x=random.randint(0,2)
         y=random.randint(0,2)
         if masu[y][x]==0:
             masu[my][mx]=1
             shirushi=shirushi+1
-            masume()
-            time.sleep(0.5)
-            hantei()
-            syouhai()
+            # masume()
+            # time.sleep(0.5)
+            # hantei()
+            # syouhai()
             break
 
 def hantei():

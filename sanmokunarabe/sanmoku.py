@@ -73,6 +73,13 @@ def computer():
                     shirushi=shirushi+1
                     return
                 masu[y][x]=0
+# プレーヤーが揃うのを阻止する
+for y in range(3):
+    for x in range(3):
+        if masu[y][x]==0:
+                masu[y][x]=1
+                hantei()
+
 
 
     while True:

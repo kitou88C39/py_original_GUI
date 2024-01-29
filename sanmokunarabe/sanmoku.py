@@ -32,7 +32,7 @@ def masume():
                 cvs.create_line(X+20,Y+20,X+180,Y+180,fill="red",width=12)
                 cvs.create_line(X+180,Y+20,X+20,Y+180,fill="red",width=12)
     if shirushi==0:
-        cvs.create_text(300,300,text="スタート",fii="navy",font=FNT)
+        cvs.create_text(300,300,text="スタート",fill="navy",font=FNT)
     cvs.update()
 
 def click(e):
@@ -56,6 +56,11 @@ def click(e):
        syouhai()
        if shirushi<9:
         computer()
+        masume()
+        time.sleep(0.5)
+        hantei()
+        syouhai()
+        
 def computer():
     global shirushi
     while True:

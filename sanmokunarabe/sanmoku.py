@@ -93,6 +93,12 @@ def hantei():
     if kachi == 2:
         root.title(" ✖️ が3つ揃いました")
 
+def syouhai():
+    global shirushi
+    if kachi==1:
+        cvs.create_text(300,300,text="あなたの勝ち",font=FNT,fill="cyan")
+        shirushi=9
+
 root=tkinter.Tk()
 root.title("三目並べ")
 root.resizable(False, False) #サイズの変更禁止
